@@ -1,0 +1,17 @@
+#!/bin/bash
+# Update the system
+yum update -y
+# Install httpd (Apache Web Server) and AWS CLI
+yum install -y httpd aws-cli
+# Start the httpd service
+systemctl start httpd
+# Enable httpd to start on boot
+systemctl enable httpd
+# Download the index.html and styles.css files from S3 to /var/www/html
+aws s3 cp s3:// ganeshandure87624 /index.html /var/www/html/index.html
+aws s3 cp s3:// ganeshandure87624 /styles.css /var/www/html/styles.css
+# Set proper permissions for the files (optional but recommended)
+chmod 644 /var/www/html/index.html
+chmod 644 /var/www/html/styles.css
+# Restart httpd service to apply any changes
+systemctl restart httpd

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ganesh Andure | Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="content-container">
+        <!-- Header Section -->
+        <header>
+            <h1>Welcome To My Website</h1>
+            <p>Ganesh Andure -AWS Cloud Engineer at Accenture ,Pune</p>
+        </header>
+
+        <!-- Contact Me Section (Top-right) -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>
+                <strong>Mobile:</strong> 9112450161<br>
+                <strong>Email:</strong> <a href="mailto:youremail@example.com">g.vishwas.andure@gmail.com</a><br>
+            </p>
+            <div class="links">
+                <p>
+                    <a href="https://ganeshandure87624.s3.us-east-2.amazonaws.com/Ganesh+Andure+Resume.pdf" target="_blank" class="button">View My Resume</a><br>
+                    <a href="https://www.linkedin.com/in/ganesh-andure/" target="_blank" class="button">Visit My LinkedIn Profile</a>
+                </p>
+            </div>
+        </section>
+
+        <!-- Profile Summary Section -->
+        <section id="profile-summary">
+            <h2>Profile Summary</h2>
+            <p>
+                AWS Certified Solution Architect with over 3+ years of experience in cloud architecture and cloud-based contact center implementations. Demonstrated expertise in Amazon Connect, AWS services and IP telephony solutions. 
+Proven track record of successfully building , deploying managing AWS solutions
+            </p>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications">
+            <h2>Certifications</h2>
+            <div class="certification-badges">
+                <img src="http://d18dn3b85pwcxo.cloudfront.net/images/AWS_SAA.png" alt="AWS Certified Solutions Architect - Associate" class="badge-img">
+                <img src="http://d18dn3b85pwcxo.cloudfront.net/images/aws_soa.png" alt="AWS Certified SysOps Administrator - Associate" class="badge-img">
+                <img src="http://d18dn3b85pwcxo.cloudfront.net/images/AWS_DAA.png" alt="AWS Certified Developer - Associate" class="badge-img">
+            </div>
+        </section>
+    </div>
+</body>
+</html>

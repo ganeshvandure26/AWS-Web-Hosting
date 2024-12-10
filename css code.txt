@@ -1,0 +1,161 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    position: relative;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Container for all content */
+.content-container {
+    width: 60%; /* Reduced width to move content to the left */
+    margin: 0 auto;
+    padding: 20px;
+    padding-top: 17px; /* Reduced padding-top to reduce the gap */
+    margin-left: 0; /* Align content to the left */
+}
+
+/* Header Section */
+header {
+    text-align: left; /* Align the header text to the left */
+    margin-bottom: 8px; /* Reduced bottom margin to reduce gap with Profile Summary */
+}
+
+header h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+    color: #555;
+    font-style: italic;
+}
+
+/* Contact Section - Positioned at Top-right */
+#contact {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #fff;
+    padding: 20px; /* Increased padding for a bigger contact box */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 250px; /* Increased width */
+    z-index: 10;
+    max-height: 90%; /* Limit the height */
+    overflow-y: auto;
+}
+
+#contact h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#contact p {
+    font-size: 14px;
+    color: #555;
+}
+
+#contact .links p {
+    font-size: 16px;
+    color: #333;
+}
+
+#contact .links a {
+    color: #fff;
+    background-color: #007bff;
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 8px;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#contact .links a:hover {
+    background-color: #0056b3;
+    transform: translateY(-5px);
+}
+
+/* Profile Summary Section */
+#profile-summary {
+    text-align: left; /* Align Profile Summary to the left */
+    margin-bottom:17px; /* Reduced bottom margin */
+    padding-top: 8px; /* Reduced padding-top to reduce the gap */
+}
+
+#profile-summary h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#profile-summary p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Certifications Section */
+#certifications {
+    text-align: left; /* Align Certifications section to the left */
+    margin-top: 15px;
+}
+
+#certifications h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.certification-badges {
+    display: flex;
+    justify-content: flex-start; /* Align badges to the left */
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.badge-img {
+    width: 120px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.badge-img:hover {
+    transform: scale(1.05);
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .content-container {
+        width: 90%; /* Increase content width for smaller screens */
+    }
+
+    .badge-img {
+        width: 100px;
+    }
+
+    .certification-badges {
+        gap: 10px;
+    }
+
+    #contact {
+        top: 10px;
+        right: 10px;
+        padding: 15px; /* Reduced padding on smaller screens */
+        width: 200px; /* Adjust width */
+    }
+
+    #profile-summary {
+        text-align: left;
+    }
+}

@@ -2,17 +2,18 @@ version: 0.2
 
 phases:
   install:
-    
+    runtime-versions:
+      Python : 3.13 # Adjust runtime (e.g., nodejs, python) based on your Lambda function
     commands:
       - echo "Installing dependencies"
-
+      - npm install # Replace with your package manager (e.g., pip, npm)
+      
   build:
     commands:
-      - echo "Building the application"
-      - zip -r function.zip lambda_function.py appspec.yml # Package the Lambda function into a zip file
-
-
+      - echo "Building and zipping the application"
+      - zip -r lambda_function.zip . # Package Lambda function into a zip file
+      
 artifacts:
   files:
-    - function.zip
-    - appspec.yml
+    - lambda_function.zip
+

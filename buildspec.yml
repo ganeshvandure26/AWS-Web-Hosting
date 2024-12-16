@@ -3,7 +3,7 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      Python : 3.13 # Adjust runtime (e.g., nodejs, python) based on your Lambda function
+      python : 3.13 # Adjust runtime (e.g., nodejs, python) based on your Lambda function
     commands:
       - echo "Installing dependencies"
       - npm install # Replace with your package manager (e.g., pip, npm)

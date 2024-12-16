@@ -4,6 +4,6 @@ Resources:
       Type: AWS::Lambda::Function
       Properties:
         Name: "MyLambdaFunction"
-        Alias: "prod"
+        Alias: "live"
         CurrentVersion: "1" # Placeholder for the current version
-        TargetVersion: "2"  # Placeholder for the new version
+        TargetVersion: "1"  # Placeholder for the new version
